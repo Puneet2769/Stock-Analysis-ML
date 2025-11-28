@@ -46,13 +46,11 @@ python main.py
 ```
 Or run directly:
 
-bash
-Copy code
+
 python MAIN-phase1_stock_indicators_with_regression_5day_backtest.py
 ```bash
 ## 📁 Current repository structure (mirror of your working folder)
-css
-Copy code
+
 ├── FINAL_stock_ml_pipeline_after_MAIN_diff_stocks_too.py
 ├── MAIN-phase1_stock_indicators_with_regression_5day_backtest.py
 ├── phase1_stock_indicators_backup_2_till_phase4.py
@@ -67,7 +65,7 @@ Copy code
 └── README.md
 (If any filename is slightly different locally, keep the version you actually use. The above list is taken from your screenshot.)
 ```
-🛠️ How the pieces fit (short)
+#🛠️ How the pieces fit (short)
 Indicator builders: generate df_ind with Close/Volume/MA/RSI/MACD/BB/ADX/volatility returns.
 
 Dataset builders: create 1-day and 5-day classification/regression datasets and split into train/test by TRAIN_FRACTION.
@@ -80,7 +78,7 @@ Plots: matplotlib visual checks (price, SMA, RSI).
 
 Outputs: printed metrics, feature importances, and optional CSVs/plots you save in an outputs/ folder.
 
-✅ Recommendations / housekeeping (short, actionable)
+#✅ Recommendations / housekeeping (short, actionable)
 Pick one MAIN entrypoint (rename to main.py) and keep that as canonical. Delete or move backups to archive/ to avoid confusion.
 
 Create an outputs/ folder and save plots / CSVs there instead of cluttering the repo root.
@@ -93,11 +91,10 @@ Store important params at top of MAIN (TICKER, PERIOD, INTERVAL, TRAIN_FRACTION)
 
 Save model artifacts (joblib.dump) and encoders if you plan to replicate results later.
 
-🔧 Minimal requirements
+#🔧 Minimal requirements
 Add a requirements.txt with at least:
 
-text
-Copy code
+
 pandas
 numpy
 yfinance
@@ -106,6 +103,7 @@ scikit-learn
 lightgbm   # optional if you use it in some scripts
 (If you want, I’ll pin exact versions from your environment.)
 
-👤 Author
+#👤 Author
 Puneet Poddar
+
 Kaggle: https://www.kaggle.com/puneet2769
