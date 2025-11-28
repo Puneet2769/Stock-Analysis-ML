@@ -1,0 +1,6 @@
+pandas
+numpy
+yfinance
+matplotlib
+scikit-learn
+lightgbm   # optional if you use it in some scripts
